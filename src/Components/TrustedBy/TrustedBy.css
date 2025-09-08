@@ -1,0 +1,80 @@
+.trustedby {
+  margin-bottom: 100px;
+}
+
+.trustedby-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 40px;
+}
+
+.trustedby-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  background: #e74d3c2a;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Infinite Scroll Effect */
+.trustedby-logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.trustedby-track {
+  display: flex;
+  width: calc(250px * 12); /* width = logo width * number of logos */
+  animation: scroll 20s linear infinite;
+}
+
+.trustedby-slide {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.trustedby-slide img {
+  max-width: 200px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.trustedby-slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Keyframes for infinite scroll */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trustedby-slide {
+    width: 180px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trustedby-slide {
+    width: 140px;
+    padding: 0 10px;
+  }
+}

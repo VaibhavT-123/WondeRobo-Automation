@@ -1,0 +1,214 @@
+.header{
+    background: var(--white);
+    box-shadow: 1px 1px 10px  rgb(211, 211, 211); 
+    /* box-shadow: 1px 1px 10px  rgb(99, 99, 99); */
+    /* border: 1px solid rgb(212, 211, 211); */
+    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    /* height: 75px; */
+
+}
+.header-container{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0  auto;
+    padding: 10px;
+}
+/* .logo-container{} */
+.logo{
+    width: 230px;
+    height: 55px;
+    transition: all 0.3s ease;
+
+}
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links-container li {
+  list-style: none;
+}
+
+.nav-links-container a {
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  color: var(--gray);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links-container a:hover {
+  color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+
+.contact-btn-container{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    /* height: 42px; */
+
+}
+
+
+.contact-btn-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 38px ;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: none;
+    background: var(--primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+
+}
+.contact-btn-container button:hover{
+    background: var(--hover-color);
+    transform: translateY(-2px);
+}
+.hamburger{
+    display: none;
+    color: var(--primary);
+    transition:  transform 0.3s ease;
+    cursor: pointer;
+}
+.hamburger:hover{
+    color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width:768px){
+    .nav-links-container{
+        display: none;
+    } 
+    .hamburger{
+        display: flex;
+    }
+    .contact-btn-container{
+        display: none;
+    }
+    /* .sidebar{
+        right: -100%;
+    } */
+}
+
+/* @media (max-width: 490px){
+    .logo{
+        width: 170px;
+        height: 50px;
+    }
+} */
+
+
+/* === SideBar === */
+.sidebar{
+    display: none;       
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 1px 1px 8px  rgb(211, 211, 211);
+    transition: right 0.3s ease ;
+    z-index: 100;
+}
+.sidebar.open{
+    right: -100%;
+}
+.sideBar-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar-logo{
+    /* margin-top: 10px; */
+}
+.sidebar-logo-img{
+    width: 130px;
+    height: 35px;
+}
+.sideBar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.sideBar-links li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.sideBar-links li:hover{
+    color: var(--hover-color);
+}
+.sideBar-contact{
+    display: grid;
+}
+.sideBar-contact button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 140px;
+    height: 38px ;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: none;
+    background: var(--primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.sideBar-contact button:hover{
+    background: var(--hover-color);
+    transform: translateY(-2px);
+}
+.close-btn{
+    position: absolute;
+    color: var(--primary);
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover{
+    color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width:768px) {
+    .sidebar{
+        display: block;
+    }
+}
+
+@media (max-width:250px) {
+    .sidebar{
+        width: 100%;
+    }
+}
