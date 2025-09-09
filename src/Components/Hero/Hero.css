@@ -1,3 +1,4 @@
+
 .Hero {
   position: relative;
   top: 80px;
@@ -98,11 +99,16 @@
   overflow: hidden;
 }
 
-.hero-btns button{
+.hero-btns a{
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.hero-btns button {
+.hero-btns .contact-btn:hover{
+
+}
+
+.hero-btns a {
   padding: 8px 20px;
   border: none;
   cursor: pointer;

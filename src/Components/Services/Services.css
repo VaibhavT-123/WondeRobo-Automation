@@ -1,7 +1,8 @@
+
 .Services{
     position: relative;
     /* margin-top: 100px; */
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;

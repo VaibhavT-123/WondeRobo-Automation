@@ -39,7 +39,7 @@ const servicesData = [
   {
     title: "Machine Manufacturing",
     description:
-      `1. Hydraulic Test Bench.                              
+      `1. Hydraulic Test Bench.                             
        2 Filling Machine .
        3. Leak Test Machine. 
        4. Brust Test Machine`,
@@ -85,6 +85,7 @@ const Services = () => {
         </div>
       </div> */}
 
+      {/* Show This For Small width */}
         <div className="Services-grid">
             {servicesData.map((service, index) => (
                 <div key={index} className="Services-card">

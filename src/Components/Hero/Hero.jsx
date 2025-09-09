@@ -38,13 +38,13 @@ const Hero = () => {
                     reliable, efficient, and scalable industrial systems.
                   </p>
                   <div className="hero-btns">
-                    <button className="explore-btn">Explore Services</button>
-                    <button className="contact-btn">Contact Us</button>
+                    <a href='#services' className="explore-btn">Explore Services</a>
+                    <a href='#contactContainer' className="contact-btn">Contact Us</a>
                   </div>
                 </div>
                 <div className="stats-container">
                   <p><span>5+</span> Years Experience</p>
-                  <p><span>25+</span> Projects Completed</p>
+                  <p><span>15+</span> Projects Completed</p>
                   <p><span>10+</span> Industries Served</p>
                 </div>
               </div>

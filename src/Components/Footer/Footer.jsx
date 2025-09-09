@@ -14,7 +14,7 @@ const Footer = () => {
                   <img src={logo}  alt="wonderobo logo" />
                 </div>
                 <p>
-                    Leading provider of industrial automation solutions with over 5 years of expertise in welding automation, robotics, and custom manufacturing systems.
+                    Leading provider of industrial automation solutions with over  years of expertise in welding automation, robotics, and custom manufacturing systems.
                 </p>
                 <div className="footer-social-logos">
                     <div className="social-logos">
@@ -33,9 +33,10 @@ const Footer = () => {
                   Quick Links
                 </h3>
                <div className="footer-quick-links"> 
-                 <a href="" className="footer-link">Home</a>
-                <a href="" className="footer-link">About</a>
-                <a href="" className="footer-link">Services</a>
+                <a href="#header" className="footer-link">Home</a>
+                <a href="#about" className="footer-link">About</a>
+                <a href="#services" className="footer-link">Services</a>
+                <a href="#contactContainer" className="footer-link">Contact Us</a>
                </div>
             </div>
             <div className="footer-services">
@@ -55,8 +56,8 @@ const Footer = () => {
                   <h3 className="footer-contact">
                     Contact Info
                   </h3>  
-                  <p>Mahesh Adode Director Mob No : 7387417567</p>
-                  <p>Tushar Desai Director Mob No: 7057718699</p>
+                  <p>Mob No : 7387417567</p>
+                  <p>Mob No: 7057718699</p>
             </div>
         </footer>
         <div className="copyright-contaiener">

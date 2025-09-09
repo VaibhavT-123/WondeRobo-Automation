@@ -88,8 +88,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-container" id="contactContainer">
+   <div className="contact-main-contaier" id="contactContainer">
       <p className='contact-container-tag'>Contact Us</p>
+     <div className="contact-container" >
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-field">
@@ -148,10 +149,10 @@ const ContactForm = () => {
       </form>
 
       <div className="contact-info">
-        <p>📍 SNO41A/1/1 MANTRI RIVERA, BOPODI, Pune, 411003, MH</p>
-        <p>📞 Mahesh: 7387471567 | Tushar: 7057718699</p>
-        <p>📧 Mahesh@wonderboapl.com | Dtushar@wonderboapl.com</p>
-        <p>🕒 Mon – Fri: 8:00 AM – 6:00 PM</p>
+        <p> <span>Address:</span>  SNO41A/1/1 MANTRI RIVERA, BOPODI, Pune, 411003, MH</p>
+        <p> <span>Phone:</span> Mahesh: 7387471567 | Tushar: 7057718699</p>
+        <p><span> Email:</span> Mahesh@wonderboapl.com | Dtushar@wonderboapl.com</p>
+        <p> <span>Working Time:</span> Mon - Sat : 10:00 AM - 5:00 PM</p>
         <iframe
           title="Google Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.283029096545!2d73.8274892!3d18.5604453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c12dfabf4b3d%3A0x5d536b05b3f7a9e3!2sSNO41A%2F1%2F1%20MANTRI%20RIVERA%2C%20SOC%2C%20BOPODI%20BLD%20B%20FL%2010B%2C%20Khadki%2C%20Pune%2C%20Maharashtra%20411003!5e0!3m2!1sen!2sin!4v1694015106503!5m2!1sen!2sin"
@@ -164,6 +165,7 @@ const ContactForm = () => {
         ></iframe>
       </div>
     </div>
+   </div>
   );
 };
 

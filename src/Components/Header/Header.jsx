@@ -54,9 +54,9 @@ const Header = () => {
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
               </ul>
-              <div className="sideBar-contact">
+              <a href='#contactContainer' className="sideBar-contact">
                 <button id='contact'>Contact Us</button>
-              </div>
+              </a>
           </div>
         </div>
 
